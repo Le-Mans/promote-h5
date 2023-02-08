@@ -6,12 +6,14 @@ import router from './router';
 import { setupStore } from '/@/store';
 import './assets/font/iconfont.css';
 import './assets/app.css';
+// import NutUI from "@nutui/nutui";
 
 const app = createApp(App);
 app.use(router);
 
 setupStore(app);
 app.use(i18n);
+// app.use(NutUI);
 app.mount('#app');
 
 // nutUi按需加载
